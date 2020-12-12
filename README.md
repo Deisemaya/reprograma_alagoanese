@@ -1,10 +1,10 @@
 # reprograma_alagoanese
-##Alagoanese
+## Alagoanese
 
  A ideia do APi, surgiu devido a necessidade de se ter as informações sobre as principais cidades de Alagoas e seus pontos turistos em um so lugar <p>
 
 ## Dependências
-
+```bash
 VSCODE
 MondoDB
 Node.js
@@ -14,9 +14,11 @@ npm
 nodemon
 dotenv
 Cors
+ ```
 
 
 ## Arquitetura
+```bash
  \--📂 API
     	   |   server.js
            |   README.md
@@ -38,11 +40,15 @@ Cors
     			    📂---routes
     			            cidadesRoutes.js
                             pontosTuristicosRoutes.js
+```
             
 
 ## Rotas da API
+ ```
 GET = '/'
 GET= '/:id'
 Post = '/create'
 PUT = '/update'
 Delete = '/delete/:id'
+
+```
