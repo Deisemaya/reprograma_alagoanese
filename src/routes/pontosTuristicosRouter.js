@@ -8,9 +8,9 @@ const controller = require('../controllers/pontosTuristicos');
 @access Public 
 @endpoint 
 **/
-/*router.get('/', );
-router.post('/', );
-router.put('/editar/:id', livroController.atualizarTitulo);
+
+router.post('/createpontos',controller.create );
+/*router.put('/editar/:id', livroControlle.r.atualizarTitulo);
 router.patch('/emprestimo/:id', livroController.emprestarLivro);*/
 
 

@@ -5,7 +5,7 @@ const pontosTuristicosSchema = new Schema({
     cidadesId:{
         type : Schema.Types.ObjectId,
         ref: 'cidadesSchema',
-        require: true
+        required: true
     },
 
 
@@ -16,16 +16,16 @@ const pontosTuristicosSchema = new Schema({
 
     tipo:{
         type: String,
-        require: true
+        required: true
     },
 
     esportes:{
         type: String,
-        require: false
+        required: false
     },
     descricao:{
         type: String,
-        require: true
+        required: true
     }
 }, { timestamps: true});
 
