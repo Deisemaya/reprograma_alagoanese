@@ -1,7 +1,7 @@
 const moongose =require('mongoose');
 require("dotenv").config();
 
-const DB_URI = "mongodb://localhost:27017/api_alagoanese"
+const DB_URI = process.env.DB_URI
 const connect = ()=>{
     moongose.connect(DB_URI,{
         useNewUrlParser:true,

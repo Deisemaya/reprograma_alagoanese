@@ -40,7 +40,7 @@ module.exports = {
             if(error){ 
             return res.status (400).send(error)
         }else{
-            return res.status(200).send({mensagem: "Cidade cadastrada com sucesso"}, cidade)
+            return res.status(200).send({mensagem: "Cidade cadastrada com sucesso",cidade} )
         }
            
         })

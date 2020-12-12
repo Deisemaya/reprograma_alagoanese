@@ -5,24 +5,24 @@ const cidadesSchema = new Schema({
     
     nome : {
         type : String,
-        require: true
+        required: true
     },
 
     regiao: {
         type : String,
-        require: true
+        required: true
     },
     pontosturisticos: {
         type : String,
-        require: true
+        required: true
     },
     descricao: {
         type : String,
-        require: true
+        required: true
     },
     cidadehistorica:{
         type : Boolean,
-        require: true
+        required: true
     }
 
 
