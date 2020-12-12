@@ -1,7 +1,7 @@
 const moongose =require('mongoose');
 require("dotenv").config();
 
-const DB_URI ='mongodb://localhost:localhost:27017/PontosTuristicos';//mongoUri
+const DB_URI = "mongodb://localhost:27017/api_alagoanese"
 const connect = ()=>{
     moongose.connect(DB_URI,{
         useNewUrlParser:true,

@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema()
+const Schema = mongoose.Schema;
 
-const praias = new Schema({
+const pontosTuristicosSchema = new Schema({
     cidadesId:{
-        type : Schema.types.ObjectId,
+        type : Schema.Types.ObjectId,
         ref: 'cidadesSchema',
         require: true
     },
@@ -14,13 +14,21 @@ const praias = new Schema({
         require: true
     },
 
-    Tipo:{
+    tipo:{
         type: String,
         require: true
     },
 
     esportes:{
         type: String,
+        require: false
+    },
+    descricao:{
+        type: String,
         require: true
     }
-})
+}, { timestamps: true});
+
+const pontosTuristicos = mongoose.model("pontosTuristicos",pontosTuristicosSchema );
+
+module.exports = pontosTuristicos;
